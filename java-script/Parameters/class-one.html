@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parameter</title>
+</head>
+<body>
+
+<p id="result"></p>
+
+    <script>
+    //for sum
+        function sum(a,b){
+            console.log(a + b);
+            return a + b;
+        }
+
+        let addone = sum(10, 12);
+        console.log(addone);
+
+        let addtwo = sum(22, 22);
+        console.log(addtwo);
+    // for sub
+        function sub(a,b){
+            console.log(a - b);
+            return a - b;
+        }
+
+        let subone = sub(10, 2);
+        console.log(subone);
+        
+        let subtwo = sub(2, 3);
+        console.log(subtwo);
+
+        // for product
+
+        function multi(a,b){
+            console.log(a * b);
+            return a * b
+        }
+
+        let multione = multi(2,3);
+        console.log(multione);
+        
+        let multitwo = multi(3,4);
+        console.log(multitwo);
+
+
+        //division
+
+        function div(a,b){
+            console.log(a / b);
+            return a/b;
+        }
+
+        let divone =div(10,5);
+        console.log(divone);
+
+        let divtwo = div(30,10);
+        console.log(divtwo);
+
+
+        function calculator(){
+           let a = sum(10, 20);
+           let b = sub(20, 10);
+           let c =  multi(10, 10);
+           let d = div(10, 5);
+            return b;
+        }
+
+        let result = calculator();
+        console.log(result);
+        document.getElementById("result").innerHTML = result;
+    </script>
+</body>
+</html>

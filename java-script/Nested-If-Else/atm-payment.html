@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="show-balance"></p>
+    <input type="number" id="input-amo">
+    <button onclick="">withdraw</button>
+
+
+    <script>
+        let balance = 1000;
+        document.getElementById("show-balance").innerHTML = balance;
+
+        function withdraw(){
+
+            let amount = document.getElementById("input-amo").value;
+            if (amount < balance){
+               
+                if(amount > 0){
+                   
+
+                    if (amount % 100 == 0){
+                       balance = balance - amount;
+                       document.getElementById("show-balance").innerHTML = balance;
+                    }else{
+                        alert("more than 100")
+                    }
+                }
+            }
+            else{
+                
+            }
+        }
+    </script>
+</body>
+</html>

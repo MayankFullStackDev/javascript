@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html</title>
+</head>
+
+<body>
+    <h1 id="heading">Artificial Inteligence</h1>
+    <p id="paragraph">
+        Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated
+        with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making. It is a
+        field of research in computer science that develops and studies methods and software that enable machines to
+        perceive their environment and use learning and intelligence to take actions that maximize their chances of
+        achieving defined goals.[1]
+    </p>
+
+    <select name="language" id="select-lang" onchange="translateLang()">
+        <option value="English">English</option>
+        <option value="Hindi">Hindi</option>
+        <option value="Marathi">Marathi</option>
+    </select>
+
+   
+    <!-- language file -->
+    <script src="./english.js"></script>
+    <script src="./hindi.js"></script>
+    <script src="./marathi.js"></script>
+
+    <script>
+        const translate = {
+            English: englishData,
+            Marathi: marathiData,
+            Hindi: hindiData
+        };
+
+        function translateLang(){
+            const selectedLanguage = document.getElementById("select-lang").value;
+            const result = translate[selectedLanguage];
+            document.getElementById("heading").innerHTML = translate[selectedLanguage].heading;
+            document.getElementById("paragraph").innerHTML = translate[selectedLanguage].paragraph;
+
+            localStorage.setItem("language", selectedLanguage);
+        }
+
+        window.onload = function (){
+            let savedLanguage = localStorage.getItem("language");
+            document.getElementById("select-lang").value = savedLanguage;
+            translateLang();
+        };
+
+        
+    </script>
+</body>
+
+</html>

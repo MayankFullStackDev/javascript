@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print 5 Number</title>
+</head>
+<body>
+    <script>
+        let total = 0;
+        let Avg = 0;
+        let input = 0;
+        let x = 1;
+
+        do{
+            input = Number(prompt("Enter a number: " + x));
+            total += input;
+            x++; 
+        }
+        while(x <= 5);
+
+        Avg = total / 5;
+        alert("Average: " + Avg);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX. on ladder if else</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            margin: 00;
+            padding: 00;
+        }
+        .main{
+            height: 60%;
+            width: 60%;
+            background-color: lightblue;
+        }
+        input{
+            width: 100%;
+            height: 14%;
+            font-size: 40px;
+            background-color: aliceblue;
+        }
+        button{
+            width: 80%;
+            height: 16%;
+            background-color: green;
+            color: white;
+            border-radius: 16px;
+            font-size: 25px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            
+        }
+        #result{
+            font-size: 32px;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <input type="text" id="input"><br/><br/>
+        <button onclick="marksGrade()">CONVERT MARKS TO GRADE</button>
+        <p id="result">DISPLAY</p>
+    </div>
+    <script>
+        function marksGrade(){
+            let marks = document.getElementById("input").value;
+        let display = document.getElementById("result").innerHTML
+
+        if (marks>=80){
+            display = "A GRADE"
+        }
+        else if (marks>=75){
+            display = "B GRADE"
+        }
+        else if(marks>=65){
+            display = "C GRADE"
+        }
+        else if (marks>=45){
+            display = "D GRADE"
+        }
+        else if(marks>=35){
+            display = "E GRADE"
+        }
+        else{
+            display = "fail"
+
+        }
+        document.getElementById("result").innerHTML = display
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class one</title>
+</head>
+<body>
+    <h1 id="display"></h1>
+    <script>
+        let i = 1;
+        let num = 5;
+        do{
+            console.log(num);
+            document.getElementById("display").innerHTML += num + "   ";
+            num = num * 10 + 5;
+            i++;
+        }
+        while(i <= 5);
+    </script>
+</body>
+</html>

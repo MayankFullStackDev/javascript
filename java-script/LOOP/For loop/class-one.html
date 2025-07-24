@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <button onclick="printEvennum()">Click</button>
+    <p id="display"></p>
+    <script>
+        function printEvennum(){
+            let sum = 0;
+            for (let number = 2; number <= 50; number++){
+                if (number % 2 === 0){
+                    sum = sum + number;
+                    console.log(number);
+                }
+            }
+            document.getElementById("display").innerHTML = " the sum of even number between 2 to 50 is  "+sum;
+        }
+    </script>
+</body>
+</html>

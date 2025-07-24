@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <h1 id="display"></h1>
+    <script>
+        const carName = ["Volvo", "Mahindra", "Scoda", "Tata", "Suzuki", "JohnDear", "Swaraj"];
+        let i = 0;
+        let upperCase = " ";
+        let CARS = [];
+
+        while(i <= carName.length-1){
+            upperCase = CARS[i].toUpperCase();
+            CARS.push(upperCase);
+            console.log(CARS);
+            document.getElementById("display").innerHTML = CARS + "<br/>";
+            i++;
+        }
+
+        
+    </script>
+</body>
+</html>

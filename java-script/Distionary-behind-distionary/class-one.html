@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distionary</title>
+</head>
+<body>
+    <h1 id="display"></h1>
+    <script>
+        const studentData = [{
+            name : 'Mayank',
+            age : 19,
+            marks : {
+                html : 10,
+                css : 23,
+                js : 3
+            }
+        },
+        {
+            name : 'Bhushan',
+            age : 22,
+            marks :{
+                html : 90,
+                css : 90,
+                js : 100
+            }
+        },
+        {
+            name : 'Shruti',
+            age : 20,
+            marks : {
+                html : 90,
+                css : 90,
+                js : 100
+            }
+        }
+    ]
+
+    // let result = `${studentData[0].name} marks is ${studentData[0].marks.html}`;
+    // console.log(result);
+
+     let result = ``;
+     for(let i = 0; i<studentData.length; i++){
+        result += `Name is ${studentData[i].name} and html marks is ${studentData[i].marks.html} <br/>`;
+     }
+     document.getElementById("display").innerHTML = result;
+    </script>
+</body>
+</html>

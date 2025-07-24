@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Function</title>
+</head>
+<body>
+
+    <h1 id="display"></h1>
+
+    <!-- adding new values in array -->
+
+    <button onclick="addingValues()">Push</button>
+    <button onclick="addingValuesUnshift()">Unshift</button>
+
+    <!-- removing values in array -->
+
+    <button onclick="removingValuesPop()">Pop</button>
+    <button onclick="removingValuesShift()">shift</button>
+
+    <!-- Extract section from array -->
+
+    <button onclick="extractValuesSlice()">Slice</button>
+
+    <!-- Replace values in array -->
+
+    <button onclick="extractValuesSplice()">Splice</button>
+
+    <script>
+         const studentName = ["Ashish", "Bhushan K", "Bhushan j", "Praful", "Dipanshu"]
+         const newStudentName = ["Athrava", "Shriya",
+
+         ]
+         document.getElementById("display").innerHTML = studentName;
+
+         function addingValues(){
+            studentName.push("Rohit");
+            document.getElementById("display").innerHTML = studentName
+         }
+
+         function addingValuesUnshift(){
+            studentName.unshift(" Shruti");
+            document.getElementById("display").innerHTML = studentName;
+         }
+
+         function removingValuesPop(){
+            studentName.pop();
+            document.getElementById("display").innerHTML = studentName;
+         }
+
+         function removingValuesShift(){
+            studentName.shift();
+            document.getElementById("display").innerHTML = studentName; 
+         }
+
+         function extractValuesSlice(){
+            newStudentName.slice(2,5);
+            document.getElementById("display").innerHTML = newStudentName;
+         }
+
+         function extractValuesSplice(){
+            studentName.splice(2,1," Mayank");
+            document.getElementById("display").innerHTML = studentName;
+         }
+    </script>
+</body>
+</html>

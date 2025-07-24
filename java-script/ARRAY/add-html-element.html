@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding HTML element</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        button{
+            padding: 7px;
+            font-size: 36px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: lightblue;
+        }
+
+        .flex-container{
+            height: 70%;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+         
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: lightcoral;
+            border: 5px;
+        }
+    </style>
+</head>
+<body>
+    
+    <button onclick="addBox()">Add element</button>
+    <button onclick="removeBox()">Add element</button>
+    <div class="flex-container" id="flex-container">
+
+    </div>
+    <script>
+        let boxes = [];
+
+        function addBox(){
+           boxes.push(`<div class="box" id="box"><div/>`);
+            console.log(boxes);
+            document.getElementById("flex-container").innerHTML = boxes;
+        }
+        function removeBox(){
+            boxes.pop();
+            document.getElementById("flex-container").innerHTML = boxes;
+        }
+    </script>
+</body>
+</html>

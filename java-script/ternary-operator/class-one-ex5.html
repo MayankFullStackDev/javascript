@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX. on ladder if else</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 00;
+            padding: 00;
+        }
+
+        .main {
+            height: 60%;
+            width: 60%;
+            background-color: lightblue;
+        }
+
+        input {
+            width: 100%;
+            height: 14%;
+            font-size: 40px;
+            background-color: aliceblue;
+        }
+
+        button {
+            width: 80%;
+            height: 16%;
+            background-color: green;
+            color: white;
+            border-radius: 16px;
+            font-size: 25px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        #result {
+            font-size: 32px;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main" id="main">
+        <input type="text" id="inputname"><br /><br />
+        <input type="text" id="input"><br /><br />
+        <button onclick="BillCalculator()">CONVERT unit to BILL</button>
+        <p id="result">DISPLAY</p>
+    </div>
+    <script>
+        function BillCalculator() {
+            let unit = prompt("Enter the number of units");
+            let bill = 0;
+
+            if(units <= 50){
+                bill = units * 7;
+            }
+            else if (unit >= 50 && unit <= 150){
+                bill = units * 8;
+            }
+            else if (units >= 150 && unit <= 250){
+                bill = units * 20;
+            }
+            else {
+                bill * 50;
+            }
+            let bill * subcharge = 0.121
+            document.getElementById("result").innerHTML ="name is :"+name + "and grade is :"+ display;
+           
+        }
+    </script>
+</body>
+
+</html>

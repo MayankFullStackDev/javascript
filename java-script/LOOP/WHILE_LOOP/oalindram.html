@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindram</title>
+</head>
+
+<body>
+    <h1 id="display"></h1>
+    <input type="text" id="inputText" placeholder="Enter text">
+    <button onclick="checkPalindram()">Check</button>
+<h2 id="display"></h2>
+
+<script>
+function checkPalindram() {
+  let string = document.getElementById("inputText").value;
+  let strLower = string.toLowerCase();
+  let len = strLower.length;
+  let i = 0;
+
+  while (i < len / 2) {
+    if (strLower[i] !== strLower[len - 1 - i]) {
+      document.getElementById("display").innerHTML = "Not Palindrome";
+      return false;
+    }
+    i++;
+  }
+
+  document.getElementById("display").innerHTML = "Palindrome";
+  return true;
+}
+</script>
+
+</body>
+
+</html>

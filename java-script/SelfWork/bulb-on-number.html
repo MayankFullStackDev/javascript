@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 00;
+
+        }
+
+        .con {
+            width: 70%;
+            height: 100%;
+            background-color: lightblue;
+        }
+
+        input {
+            height: 10%;
+            width: 60%;
+        }
+
+        button {
+            width: 50%;
+            height: 10%;
+            background-color: yellowgreen;
+        }
+
+        .img-box {
+            width: 60%;
+            height: 70%;
+            background-color: antiquewhite;
+        }
+
+        img {
+            height: 90%;
+            width: 90%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="con">
+        <input id="first" type="number" value="number"><br><br>
+        <button type="button" onclick="ChangeImage()">Check</button><br><br>
+        <div class="img-box">
+            <img id="myImage" src="https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940319kdxsp3rf0i.png">
+        </div>
+    </div>
+
+</body>
+
+<script>
+    function ChangeImage() {
+        let x = Number(document.getElementById('first').value);
+        if (x % 2 == 0) {
+            document.getElementById("myImage").src = "https://toppng.com/uploads/preview/light-bulb-on-off-png-115539402943y50vxr5yi.png"
+        }
+        else {
+            document.getElementById("myImage").src = "https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940319kdxsp3rf0i.png"
+        }
+    }
+</script>
+
+</html>

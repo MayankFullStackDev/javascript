@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm snoozer</title>
+</head>
+<body>
+
+    <button onclick="alerm()">Alarm</button>
+    <script>
+
+      function alerm(){
+        alert("Alerm Ringing!!!!")
+
+        let userAns = prompt("snooze the alerm? (yes/no)");
+
+        while (userAns === "yes"){
+            alert("Alert snooze for 5 mintes");
+            userAns = prompt("Snooze the alerm? (yes/no)");
+
+        }
+        alert("Alert is stoped.");
+      }
+    </script>
+</body>
+</html>

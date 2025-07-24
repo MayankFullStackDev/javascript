@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <input  id="input" type="number">
+        <p id="result"></p>
+        <button onclick="HoursetoDays()">Calculate Hours</button>
+    </div>
+    <script>
+      
+           function HoursetoDays(){
+             let day = Number(document.getElementById("input").value);
+            let Hours = 0;
+            let displayError = "";
+
+            if (day == 0){
+                displayError = "day can not be zero"
+            }
+
+            else{
+                Hours = day * 24
+            }
+
+            alert(Hours + " gante");
+          document.getElementById("result").innerHTML = Hours
+           }
+    </script>
+</body>
+</html>

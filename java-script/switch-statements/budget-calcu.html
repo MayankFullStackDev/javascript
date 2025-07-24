@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Calculator</title>
+</head>
+<body>
+    <h1>Budget calculator </h1>
+
+    <input type="number" id="income"><br>
+    <input type="number" id="rent"><br>
+    <input type="number" id="food"><br>
+    <input type="number" id="other"><br>
+    <button onclick="budgetCalcu()">Calculate</button>
+         <p id="display"></p>
+    <script>
+         function budgetCalcu(){
+            let income = Number(document.getElementById("income").value);
+            let rent = Number( document.getElementById("rent").value);
+            let food = Number(document.getElementById("food").value);
+            let other = Number( document.getElementById("other").value);
+
+            let add = (rent + food + other);
+            let sum = (add - income);
+            let displaysaving =(sum/ 30);
+
+            document.getElementById("display").innerHTML = " add:" + add + "<br> sum :" + sum + "<br> display saving:" + displaysaving;
+
+         }
+    </script>
+</body>
+</html>

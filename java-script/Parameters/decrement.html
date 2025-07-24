@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="display"></p>
+    <script>
+        function decrementNumber(number){
+            if(number <= 0)
+        {
+            console.log("end");
+        }
+        else{
+            document.getElementById("display").innerHTML += number;
+            console.log(number);
+            decrementNumber(number - 1);
+        }
+        return 0;
+        }
+
+        let output2 = decrementNumber(10);
+        console.log(output2);
+    </script>
+</body>
+</html>

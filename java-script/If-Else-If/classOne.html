@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Else Exercise</title>
+</head>
+ 
+<body>
+    <script>
+        let income = 3500000;
+        let taxAmount = calculateTax(income);
+        
+        function calculateTax() {
+            let tax = 0;
+ 
+            if (income <= 600000) {
+                tax = 0;
+            } else if (income <= 1200000) {
+                tax = (income - 600000) * 0.05;
+            } else if (income <= 2400000) {
+                tax = (600000 * 0.05) + (income - 1200000) * 0.10;
+            } else if (income <= 3000000) {
+                tax = (600000 * 0.05) + (1200000 * 0.10) + (income - 2400000) * 0.20;
+            } else {
+                tax = (600000 * 0.05) + (1200000 * 0.10) + (600000 * 0.20) + (income - 3000000) * 0.30;
+            }
+ 
+            return tax;
+        }
+        console.log("Total Tax Payable: ₹" + taxAmount);
+    </script>
+</body>
+ 
+</html>
