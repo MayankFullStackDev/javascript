@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex child property</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            margin: 00;
+            padding: 00;
+        }
+        .main{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            gap: 20px;
+        }
+        .box1{
+            height: 50%;
+            width: 33.3%;
+            flex-shrink: 1;
+            background-color: lightcoral;
+          
+        }
+        .box2{
+            height: 50%;
+            width: 33.3%;
+            flex-shrink: 1;
+            background-color: lightslategray;
+        }
+        .box3{
+            height: 50%;
+            width: 33.3%;
+            flex-shrink: 1;
+            background-color: lightgoldenrodyellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+</body>
+</html>

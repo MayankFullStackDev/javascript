@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex grow</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            margin: 00;
+            padding: 00;
+        }
+        .main{
+            width: 100%;
+            height: 100%;
+            row-gap: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .box1{
+            height: 30%;
+            width: 90%;
+            background-color: lightskyblue;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        /* for child */
+        .box11{
+            flex-grow: 3;
+            background-color: black;  
+        }
+        .box2{
+            height: 30%;
+            width: 90%;
+           background-color: lightskyblue;
+             display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content: space-between;
+        }
+        /* for child */
+        .box22{
+             flex-grow: 2.5;
+            background-color: black;
+        }
+        .box222{
+             flex-grow: 4;
+            background-color: black;
+        }
+        .box2222{
+             flex-grow: 1;
+            background-color: black;
+        }
+        .box3{
+            height: 30%;
+            width: 90%;
+            background-color: lightskyblue;
+             display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content: space-between;
+        }
+        /* for child */
+        .box33{
+             flex-grow: 4;
+            background-color: black;
+            
+        }
+        .box333{
+             flex-grow: 10;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+   <div class="main">
+    <div class="box1">
+        <div class="box11">1</div>
+        <div class="box11">2</div>
+        <div class="box11">3</div>
+    </div>
+    <div class="box2">
+        <div class="box22"></div>
+        <div class="box222"></div>
+        <div class="box2222"></div>
+        
+    </div>
+    <div class="box3">
+        <div class="box33"></div>
+        <div class="box333"></div>
+        <div class="box33"></div>
+    </div>
+   </div> 
+</body>
+</html>

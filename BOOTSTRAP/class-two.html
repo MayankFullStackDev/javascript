@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queary</title>
+    <style>
+        body {
+
+            width: 100vw;
+            padding: 0;
+            margin: 0;
+        }
+
+        .main {
+            height: 300px;
+            width: 100%;
+            background-color: antiquewhite;
+            gap: 20px;
+        }
+
+        .box1 {
+            background-color: yellow;
+            height: 400px;
+            width: 100%;
+            gap: 20px;
+            margin-top: 10px;
+        }
+
+        .main-con {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .left {
+            height: 550px;
+            width: 70%;
+            background-color: blue;
+            gap: 20px;
+        }
+
+        .left-con {
+            height: 50%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            margin-top: 20px;
+            gap: 60px;
+            margin-left: 8%;
+        }
+
+        .box2 {
+            height: 90%;
+            width: 38%;
+            background-color: aliceblue;
+            gap: 20px;
+        }
+
+        .box4 {
+            height: 45%;
+            width: 98%;
+            background-color: rgb(215, 223, 230);
+            gap: 20px;
+        }
+
+        .right {
+            height: 550px;
+            width: 30%;
+            display: flex;
+            background-color: brown;
+            gap: 20px;
+        }
+
+        @media (max-width: 320px) {
+            .main {
+                background-color: rgb(15, 11, 5);
+                flex-direction: column;
+            }
+
+            .box1 {
+                background-color: black;
+            }
+
+        }
+
+        @media (max-width: 480px) {
+            .box1 {
+                height: 600px;
+            }
+
+            .main-con {
+                height: 1500px;
+                flex-direction: column;
+                background-color: blueviolet;
+            }
+
+            .left {
+                width: 400px;
+                height: 500px;
+            }
+
+            .box2 {
+                height: 160px;
+                margin-top: 30px;
+            }
+
+            
+
+            .box4 {
+                height: 460px;
+            }
+
+            .right {
+                width: 100%;
+                height: 500px;
+                margin-top: 250px;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box1"></div>
+
+        <!-- main body container -->
+        <div class="main-con">
+            <div class="left">
+                <div class="left-con">
+                    <div class="box2">
+                        Mahendra Singh Dhoni (born 7 July 1981) is an Indian
+                        professional cricketer who plays as a right-handed batter and a wicket-keeper. Widely regarded
+                        as one of the most prolific wicket-keeper batsmen and captains and one of the greatest ODI
+                        batsmen ever, he represented the Indian cricket team and was the captain of the side in limited
+                        overs formats from 2007 to 2017 and in test cricket from 2008 to 2014.
+                    </div>
+                    <div class="box2">
+                        Mahendra Singh Dhoni ( born 7 July 1981) is an Indian
+                        professional cricketer who plays as a right-handed batter and a wicket-keeper. Widely regarded
+                        as one of the most prolific wicket-keeper batsmen and captains and one of the greatest ODI
+                        batsmen ever, he represented the Indian cricket team and was the captain of the side in limited
+                        overs formats from 2007 to 2017 and in test cricket from 2008 to 2014.
+                    </div>
+                </div>
+                <div class="box4"></div>
+            </div>
+            <div class="right">
+                <div class="box5"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
